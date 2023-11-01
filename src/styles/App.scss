@@ -1,0 +1,47 @@
+$bg-dark: 'black';
+
+%black-card {
+  background-color: $bg-dark;
+  color: white;
+}
+
+$breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1536px) !default;
+
+@mixin respond-to($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        @media (min-width: map-get($breakpoints, $breakpoint)) {
+            @content;
+        }
+    }
+    @else {
+        @warn "Breakpoint #{$breakpoint} não encontrado na lista de breakpoints.";
+    }
+}
+nav {
+  padding: 2em;
+}
+.gabs-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+  ul {
+    a{
+      margin: 10px;
+    }
+  }
+
+  @include respond-to(xs) {
+     background-color: red;
+  }
+  @include respond-to(lg) {
+    background-color: blue;
+  }
+}
