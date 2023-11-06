@@ -1,12 +1,10 @@
 // src/components/Home.tsx
 import React from 'react';
 
-const NotFound: React.FC = () => {
+const NotFound = () => {
   return (
     <div>
-      <h1>Bem-vindo à Página Inicial!</h1>
-      <p>Este é o conteúdo da página inicial do meu aplicativo.</p>
-      {/* Adicione mais elementos conforme necessário */}
+      <h1>Página não encontrada! 404</h1>
     </div>
   );
 }

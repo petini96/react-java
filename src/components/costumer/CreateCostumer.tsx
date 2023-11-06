@@ -23,35 +23,16 @@ const CreateCostumer = () => {
               <InputLeftElement pointerEvents='none'>
                 <AiOutlineZhihu color='gray.300' />
               </InputLeftElement>
-              <Input type='tel' placeholder='Phone number' />
+              <Input type='tel' placeholder='Nome' />
             </InputGroup>
 
             <InputGroup>
-              <InputLeftElement
-                pointerEvents='none'
-                color='gray.300'
-                fontSize='1.2em'
-                children='$'
-              />
-              <Input placeholder='Enter amount' />
-              <InputRightElement>
-                <AiFillGithub color='green.500' />
-              </InputRightElement>
+              <InputLeftElement pointerEvents='none'>
+                <AiOutlineZhihu color='gray.300' />
+              </InputLeftElement>
+              <Input type='tel' placeholder='E-mail' />
             </InputGroup>
-            <InputGroup>
-              <Select placeholder='large size'>
-                <option value='option1'>Option 1</option>
-                <option value='option2'>Option 2</option>
-                <option value='option3'>Option 3</option>
-              </Select>
-            </InputGroup>
-            <InputGroup>
-              <Input
-                placeholder="Select Date and Time"
-                size="md"
-                type="datetime-local"
-              />
-            </InputGroup>
+              
             <Button colorScheme='blue' my={'20px'}>Create</Button>
             <Button colorScheme='red' my={'20px'} mx={'10px'}>Delete</Button>
           </FormControl>

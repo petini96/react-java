@@ -7,15 +7,24 @@ import ShowCostumerPage from '../pages/costumer/ShowCostumerPage';
 import {
     createBrowserRouter,
 } from "react-router-dom";
+import NotFound from '../components/NotFound';
 
 export const router = createBrowserRouter([
     {
         path: "/",
         element: <App />,
+        children: [
+            {
+                path: "",
+                element: <HomeCostumerPage />,
+            },
+        ],
+        errorElement: <NotFound />,
     },
     {
         path: "/costumer",
         element: <App />,
+        errorElement: <NotFound />,
         children: [
             {
                 path: "",

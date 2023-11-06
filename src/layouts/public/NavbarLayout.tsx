@@ -6,10 +6,11 @@ const NavbarLayout = () => {
   return (
     <nav className='gabs-container'>
       <ul>
-        <Link to='/home'>Home</Link>
-        <Link to='/costumer'>Costumer Page</Link>
-        <Link to='/costumer/create'>Create Costumer</Link>
-        <Link to='/costumer/show/755'>Show Costumer</Link>
+        <Link to='/'>Home</Link>
+        <Link to='/costumer'>Listar Clientes</Link>
+        <Link to='/costumer/create'>Cadastrar Clientes</Link>
+        <Link to='/costumer/orders'>Pedidos</Link>
+        <Link to='/login'>Login</Link>
       </ul>
     </nav>
   );

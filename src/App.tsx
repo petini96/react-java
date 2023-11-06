@@ -1,4 +1,4 @@
-import { Link, Outlet } from 'react-router-dom';
+import {Outlet } from 'react-router-dom';
 import './styles/App.scss';
 import { ChakraProvider } from '@chakra-ui/react';
 import NavbarLayout from './layouts/public/NavbarLayout';

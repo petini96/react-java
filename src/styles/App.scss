@@ -23,8 +23,19 @@ $breakpoints: (
         @warn "Breakpoint #{$breakpoint} não encontrado na lista de breakpoints.";
     }
 }
+
+@mixin flex($direction: row, $justify: center, $align: center, $gap: 0px) {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
+
 nav {
-  padding: 2em;
+  height: 10vh;
 }
 .gabs-container{
   display: flex;
@@ -44,4 +55,10 @@ nav {
   @include respond-to(lg) {
     background-color: blue;
   }
+}
+
+.home{
+  height: 90vh;
+  @include flex($direction: collumn, $justify: center, $align: center, $gap: 10px);
+
 }
